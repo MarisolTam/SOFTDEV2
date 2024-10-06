@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOOM</title>
+    <link rel="icon" href="logobloom.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <!-- Login form -->
+     <div id="login-form" class="login-form">
+        <h2> Marisol Tamondong</h2>
+        <input type="password" id="password-input" placeholder="Enter password">
+        <button id="submit-btn">Log In</button>
+    </div>
+
+    <!-- Main content -->
+    <main style="display: none;">
+  
+    <!----------- NAVIGATION ----------->
+    <nav class='navigation-bar'>
+        <div class='nav-container'>
+            <img class='logo' src='logobloom.png'  alt='BEE.U LOGO'>
+            <ul class='nav-list'>
+                <ul class='nav-list'>
+                    <li><a href='#section-home'>HOME</a></li>
+                    <li><a href='#section-about'>ABOUT</a></li>
+                    <li><a href='#section-file'>FILES</a></li>
+                    <li><a href='#section-contact'>CONTACT</a></li>
+                </ul>
+                <button id="logout-btn">Logout</button>
+        </div>
+        </nav>
+
+    <br><br>
+    <!----------- MAIN ----------->
+    <main>
+    <!----------- HEADER ----------->
+    <br>
+    <header class='main-header' id='section-home'>
+        <h1 class='typewriter'>MARISOL TAMONDONG</h1>
+        <h2>YOUR SELF-WORTH IS DETERMINED BY YOU. YOU DON'T HAVE TO DEPEND ON SOMEONE TELLING YOU WHO YOU ARE.</h2>
+        <br>
+        <img src='picture.jpg'  alt='profile-picture'> <br>
+        <a href='marisol-tamondong.pdf'>Download Resumé</a>
+        <p>
+            There's nothing I believe in more <br>
+            strongly than getting young people <br>interested in science and engineering,
+            <br>
+            for a better tommorrow,<br> for all humandkind.
+    </header>
+
+    <!----------- SECTION 1 (ABOUT) ----------->
+    <section class='about' id='section-about'>
+        <div class='about-statement' >
+            <h2>ABOUT</h2>
+            <img src='bloomlogo.png' alt='bloom logo'>
+            <p>
+            BLOOM <br> no matter where you are <br>
+            </p>
+        </div>
+        <div class='vision-statement'>
+            <h3>Birthdate:</h3>
+            <p>
+            December 22, 2002
+            </p>
+        </div>
+        <div class='mission-statement'>
+            <h3>Age:</h3>
+            <p>
+            21 years old
+            </p>
+        </div>
+        <div class='values-statement'>
+            <h3>Values</h3>
+            <p>
+            Be like a FLOWER.
+            Survive the rain.
+            But use it to grow. 
+            </p>
+        </div>
+    </section>
+
+
+    
+       <!----------- SECTION 5 (FILES) ----------->
+       <div class="container">
+        <section class='files' id='section-file'>
+            <h3>Files</h3>
+            
+                <!-- New Folder Creation -->
+                <div>
+                    <input type="text" id="folder-name" placeholder="Enter folder name" />
+                    <button id="create-folder-btn">Create Folder</button>
+                </div>
+                <br>
+
+                <!-- Folder Selection -->
+                <label for="folder-select">Select Folder:</label>
+                <select id="folder-select">
+                    <option value="">Select a folder</option>
+                </select>
+                <br><br>
+
+                <!-- File Upload Form -->
+                <form id="upload-form">
+                    <input type="file" id="file-input" accept="/" required />
+                    <button type="submit"><i class="fas fa-upload"></i> Upload</button>
+                </form>
+
+                <!-- Loading Indicator -->
+                <div id="loading" class="loading" style="display: none">
+                    Uploading...
+                </div>
+
+                <!-- Uploaded Files Display -->
+                <div id="uploaded-files"></div>
+            </section>
+        </div>
+
+    <!----------- SECTION 4 (CONTACT) ----------->
+    <section class='contact' id='section-contact'>
+        <h2>CONTACT</h2>
+        <form>
+            <fieldset class=''> 
+                <legend><strong>GET IN TOUCH</strong></legend>
+                <label for='name'>Your Name:  </label><input type='text' id='name' placeholder='First Name' required> <input type="text" placeholder='Last Name' name='last-name' required> <br><br>
+                <label for='email'>Email Address:  </label><input type='email' id='email' placeholder='Email Address' required> <br> <br>
+                <label for='number'>Phone Number:  </label><input type='tel' id='number' placeholder='Input your number' required> <br><br>
+                <label for="messages">Send us a message. We would like to hear from you.</label><br>
+                <textarea id='messages' cols='70' rows='5'></textarea> <br>
+                <input type='checkbox'>  Sign me up for email updates.  <br><br>
+                <input type='submit' name='submit' value='Submit Form' id='submit-form'>
+            </fieldset>
+        </form>
+    </section>
+    <br><br>
+    </main>
+
+    <footer class='main-footer'>
+        <div class='list-footer'>
+            <a href='https://www.linkedin.com/in/marisol-tamondong-37952a2b0/'><img src='linkedin.png' alt='Linked-In Account'> </a>
+            <a href='https://www.facebook.com/christaljade.varon'><img src='facebook.png' alt='Faceboook Account'> </a>
+            <a href='https://www.instagram.com/mrsl.tmndng?igsh=bDMzZ2E0NXM1YW1i&utm_source=qr'><img src='instagram.png' alt='Instagram Account'> </a>
+            <a href='https://www.tiktok.com/@zircon_22?lang=en'><img src='tiktok.png' alt='tiktok Account'> </a>
+            <a href='https://discord.com/users/zircon_22'><img src='discord.png' alt='Discord Account'> </a>
+            <a href='https://github.com/MarisolTam'><img src='github.png' alt='Github Account'> </a>
+        </div>
+    </footer>
+
+    <script src="scrit.js"></script>
+</body>
+</html>
